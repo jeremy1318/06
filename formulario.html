@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    
+    <main>
+        <!--definimos un formulario-->
+        <form action="/destino" method="post">
+          <label for="usuario"> usuario</label> 
+          <input type="text" name="usuario" id="usuario">    
+          
+          <label for="clave">clave</label>
+          <input type="password" name="clave" id="clave">
+<!--placeholder permite colocar un label dentro del input-->
+          <input type="text" name="apellido" id="apellido" placeholder="ingrese apellido">
+
+          <div>
+            <h2>Equipos</h2>
+            <label for="boca">boca</label>
+            <input type="checkbox" name="boca" id="boca" value="1">
+            <label for="River">River</label>
+            <input type="checkbox" name="River" id="River" value="1">
+            <label for="ferro">ferro</label>
+            <input type="checkbox" name="ferro" id="ferro" value="1">
+          </div>
+          <div>
+            <h2>
+                comidas
+            </h2>
+            <label for="comida">Hamburguesa</label>
+            <input type="radio" name="comida" id="hamburguesa">
+            <label for="comida">Milanesas</label>
+            <input type="radio" name="comida" id="milas">
+            <label for="comida">Pizza</label>
+            <input type="radio" name="comida" id="Pizza">
+          </div>
+          <div>
+            <h2>
+                Provincias:
+            </h2>
+            <label for="provincias">provincias</label>
+            <select name="provincias" id="provincias">
+                <option value="">Elegir provincias</option>
+                <!--selected es un atributo para que una opcion este seleccionada por defecto-->
+                <option value="rn" selected>Río Negro</option>
+                <option value="nqn">Neuquén</option>
+                <option value="ch">Chubut</option>
+            </select>
+          </div>
+          <div>
+            <label for="carta">Carta Desde el Corazon</label>
+            <textarea name="carta" id="carta" cols="30" rows="10"></textarea>
+          </div>
+         </form>
+    </main>
+
+</body>
+</html>

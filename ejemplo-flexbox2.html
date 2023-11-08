@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <style>
+       body {
+           background-color: #f4acb7;
+           margin: 0;
+           padding: 0;
+           background-image: url(asset/img/PANTALLA.jpg);
+       }
+
+       .container {
+           /* Podés visitar: https://developer.mozilla.org/es/docs/Learn/CSS/CSS_layout/Flexbox#el_modelo_flexible para entender el modelo Flexbox */
+           display: flex; /* Establece el contenedor como un contenedor flex */
+           flex-wrap: wrap; /* Permite que los elementos se envuelvan en líneas adicionales si no hay suficiente espacio */
+           justify-content: center; /* Centra los elementos a lo largo del eje principal horizontal */
+           align-items: center; /* Centra los elementos a lo largo del eje secundario vertical */
+           background-color: #707674;
+           margin: 0 50px;/* Margen a la derecha y a la izquierda. El valor 0 es para el margen superior e inferior */
+
+       }
+
+       header {
+           display: flex; /* Establece el encabezado como un contenedor flex */
+           align-items: baseline; /* Alinea los elementos del encabezado a lo largo de la línea de base */
+           justify-content: center; /* Distribuye los elementos del encabezado de manera uniforme a lo largo del eje principal horizontal */
+           padding: 25px;
+       }
+       .container-title {
+           width: 100%;
+           text-align: center;
+           margin-bottom: 20px;
+       }
+
+       .container-image {
+           text-align: center;
+           margin-bottom: 20px;
+       }
+
+       .box {
+           width: 350px;
+           padding: 20px;
+           background-color: white;
+           margin: 10px;
+           text-align: center;
+       }
+       
+       .logo{
+        width: 75%;
+
+       }
+       .img2 {
+        width: 75%;
+        height: 250px;
+       }
+       .precio{
+        font-size: 1.7em ;
+       }
+       .precio2 {
+        font-size: 1.7em;
+       }
+       .precio3 {
+        font-size: 1.7em;
+       }
+       .precio4{
+        font-size: 1.7em;
+       }
+       .name{
+        text-align: center;
+        background-color: white ;
+        margin-bottom: 20px;
+       }
+
+   </style>
+</head>
+
+<body>
+   <header>
+       <div class="container-image">
+           <img src="asset/img/gif-marvel-91.gif" alt="Imagen de Producto" class="logo">
+       </div>
+   </header>
+   <main class="container">
+       <div class="box">
+           <img src="asset/img/COMIC 1.jpg" alt="" class="img2">
+           <h3>Marvel Must Have. Deadpool Kills The Marvel Universe</h3>
+           <p class="precio"> <strong>$13.999</strong></p>
+           <a href="#">Comprar</a>
+       </div>
+       <div class="box">
+           <img src="asset/img/comic2.jpg" alt="" class="img2">
+           <h3>Marvel Deluxe Civil War - Steve Mcniven - Panini España</h3>
+           <p class="precio2"><strong>$27.600</strong></p>
+           <a href="#">Comprar</a>
+       </div>
+       <div class="box">
+           <img src="asset/img/pop.jpg" alt="" class="img2">
+           <h3>Funko Pop - Marvel - Thor Love Thunder - Thor </h3>
+           <p class="precio3"><strong>$16.760</strong></p>
+           <a href="#">Comprar</a>
+       </div>
+       <div class="box">
+           <img src="asset/img/muñeco.webp" alt="" class="img2">
+           <h3>Figura Hulkbuster Con Luz Led De 20 Cm Articulado</h3>
+           <p class="precio4"><strong>$98.500</strong></p>
+           <a href="#">Comprar</a>
+       </div>
+   </main>
+   <footer>
+    <p class="name">maureira jeremy</p>
+   </footer>
+</body>
+</html>
+    |
